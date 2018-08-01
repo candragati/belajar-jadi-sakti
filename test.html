@@ -1,0 +1,15 @@
+<script>
+var symbol=new Array()
+symbol[0]='&hearts;'
+symbol[1]='&diams;'
+symbol[2]='&clubs;'
+symbol[3]='&spades;'
+
+var nomor='A23456789JQK';
+var acaknomor=Math.floor(Math.random()*(nomor.length))
+var acaksymbol=Math.floor(Math.random()*(symbol.length))
+var kartu='<table border=0 height=100% width=100%><tr><td align=center><font size=12>'+nomor[acaknomor]+'<br>'+symbol[acaksymbol]+'</font></td></tr></table>'
+
+document.write(kartu);
+
+</script>
